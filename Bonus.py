@@ -1,5 +1,12 @@
-#dataset
-values = [47,95,88,73,88,84]
+#generating numbers
+import random
+
+values = []
+
+for i in range(0,150):
+    n = random.randint(1,50)
+    values.append(n)
+
 print('values: ' ,values )
 
 import statistics
@@ -24,4 +31,3 @@ print('Median: ', median)
 
 mode = statistics.mode(values)
 print('Mode: ', mode)
-
